@@ -27,54 +27,54 @@ print the program.
  Reg no:212221230117
  ~~~
  ~~~
- 
 using System;
 namespace overload
 {
-    class example
-    {
-        int n;
-        public example(int a)
-        {
-            this.n = a;
-            Console.Write("This is default Constructor");
-            Console.WriteLine(" value is = " + this.n);
-        }
-        public example()
-        {
-            this.n = 10;
-            Console.WriteLine("Default Constructor value is = " + this.n);
-        }
-        public static bool operator ==(example e1, example e2)
-        {
-            return e1.Equals(e2);
-        }
-        public static bool operator !=(example e1, example e2)
-        {
-            return !e1.Equals(e2);
-        }
-        static void Main(string[] args)
-        {
-            example e1 = new example(10);
-            example e4 = new example();
-            example e2 = e4;
-            if (e2 == e4)
-            {
-                Console.WriteLine("Both are equal");
-            }
-            else
-            {
-                Console.WriteLine("Both are not equal");
-            }
-        }
-    }
+  class example
+  {
+      int n;
+      public example(int a)
+      {
+          this.n = a;
+          Console.Write("This is a parameterized Constructor");
+          Console.WriteLine(" value is = " + this.n);
+      }
+      public example()
+      {
+          this.n = 10;
+          Console.WriteLine("Default Constructor value is = " + this.n);
+      }
+      public static bool operator ==(example e1,example e2)
+      {
+          return e1.Equals(e2);
+      }
+      public static bool operator !=(example e1,example e2)
+      {
+          return !e1.Equals(e2);
+      }
+      static void Main(string[] args)
+      {
+          example e1 = new example(10);
+          example e4 = new example();
+          example e2 = e4;
+          if(e2==e4)
+          {
+              Console.WriteLine("Both are equal");
+          }
+          else
+          {
+              Console.WriteLine("Both are not equal");
+          }
+      }
+  }
 }
 
  ~~~
  
  
  ## Output:
-![exp6](https://user-images.githubusercontent.com/95388047/236787856-3a88736f-5a9b-4672-b2a5-64fa61e211e5.png) 
+![1](https://github.com/Thiru-AI/Operator-Overloading/assets/94980741/8978c04a-4144-4834-a729-6c43b38f24a1)
+
  
  ## Result:
  Thus the C# program to find the volume of a box using operator overloading is implemented successfully.
