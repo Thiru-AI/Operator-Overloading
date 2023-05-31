@@ -22,9 +22,12 @@ print the program.
  
  
  ## Program:
- NAME : SWATHIKA G </BR>
- REG NO : 212221230113
- ```PY
+ ~~~
+ Name:Thirugnanamoorthi G
+ Reg no:212221230117
+ ~~~
+ ~~~
+ 
 using System;
 namespace overload
 {
@@ -67,7 +70,7 @@ namespace overload
     }
 }
 
- ```
+ ~~~
  
  
  ## Output:
